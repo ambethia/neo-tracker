@@ -1,13 +1,52 @@
-@import 'utility';
-
-$base-text-size: 16px;
-$base-font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700');
 
 html {
-  @include full-height;
+  height: 100%;
+
+  body,
+  #root {
+    min-height: 100vh;
+  }
 }
 
 body {
   margin: 0;
-  font: $base-text-size / 1 $base-font-family;
+  background-color: #333;
+  color: #eee;
+  font-family: 'Exo 2', sans-serif;
+}
+
+#root {
+  text-align: center;
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.currencies {
+  flex: 1;
+  justify-content: space-around;
+  display: flex;
+
+  .currency {
+    input {
+      font-family: 'Exo 2', sans-serif;
+      background-color: #444;
+      border: none;
+      text-align: center;
+      color: #eee;
+      padding: 0.2em;
+      font-size: 1em;
+      margin: 1em;
+      width: 3em;
+    }
+  }
+}
+
+h2 {
+  font-size: 1.6em;
 }

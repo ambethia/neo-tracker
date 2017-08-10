@@ -11,7 +11,9 @@ const root = document.getElementById('root')
 
 const render = app => {
   ReactDOM.render(
-    <AppContainer errorReporter={Redbox}>{app}</AppContainer>,
+    <AppContainer errorReporter={Redbox}>
+      {app}
+    </AppContainer>,
     root
   )
 }
